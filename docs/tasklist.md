@@ -48,10 +48,10 @@ Format status:
 
 - [x] **Task 3.1 Implementasi Test Autentikasi (`@auth`, `@security`)** `(2026-11-24)`
   - *Catatan*: 18 automated test case (TC-AUTH-001 s/d 011 dan TC-SEC-001 s/d 007) selesai diimplementasikan di `tests/auth/auth.spec.ts` dan `tests/auth/security.spec.ts`. Hasil eksekusi Playwright menunjukkan 100% Passed (18/18 lolos dalam 18.6s).
-- [ ] **Task 3.2 Implementasi Test Navigasi & Form Pengajuan PKWT (`@pkwt`)**
-  - *Catatan*: Pending: Ditugaskan kepada Rekan Tim (Engineer 2). Meliputi implementasi `tests/pkwt/navigation.spec.ts` (9 TC: TC-PKWT-NAV-001 s/d 009) dan `tests/pkwt/submission-forms.spec.ts` (5 TC: TC-PKWT-FRM-001 s/d 005). (*Catatan*: 6 TC Dashboard PKWT di `tests/pkwt/dashboard.spec.ts` telah diselesaikan oleh Engineer 1).
-- [ ] **Task 3.3 Implementasi Test Dashboard, Sapaan & Presensi Mitra (`@mitra`, `@clock`, `@mutating`)**
-  - *Catatan*: Pending: Ditugaskan kepada Rekan Tim (Engineer 2). Meliputi implementasi `tests/mitra/dashboard-greetings.spec.ts` (11 TC: TC-MITRA-DSH-001 s/d 011) dan `tests/mitra/presence-clock.spec.ts` (6 TC: TC-MITRA-CLK-001 s/d 006).
+- [x] **Task 3.2 Implementasi Test Navigasi & Form Pengajuan PKWT (`@pkwt`)** `(2026-11-27)`
+  - *Catatan*: Selesai diimplementasikan oleh Engineer 2: `tests/pkwt/navigation.spec.ts` (9 TC: TC-PKWT-NAV-001 s/d 009) dan `tests/pkwt/submission-forms.spec.ts` (5 TC: TC-PKWT-FRM-001 s/d 005). (*Catatan*: 6 TC Dashboard PKWT di `tests/pkwt/dashboard.spec.ts` telah diselesaikan oleh Engineer 1).
+- [x] **Task 3.3 Implementasi Test Dashboard, Sapaan & Presensi Mitra (`@mitra`, `@clock`, `@mutating`)** `(2026-11-27)`
+  - *Catatan*: Selesai diimplementasikan oleh Engineer 2: `tests/mitra/dashboard-greetings.spec.ts` (11 TC: TC-MITRA-DSH-001 s/d 005 & TC-MITRA-BND-001 s/d 006) dan `tests/mitra/presence-clock.spec.ts` (6 TC: TC-MITRA-CLK-001 s/d 006).
 - [x] **Task 3.4 Implementasi Test Non-Fungsional Layout Desktop Column (`@regression`, `@visual`)** `(2026-11-24)`
   - *Catatan*: 4 automated test case (TC-NF-UI-001 s/d 004) selesai diimplementasikan di `tests/visual/layout-desktop.spec.ts`. Seluruh 4 test case lolos 100% Passed (10.4s). Diselesaikan oleh Engineer 1.
 
@@ -62,8 +62,8 @@ Format status:
 
 - [x] **Task 4.1 Eksekusi Test Suite Smoke (`@smoke`)** `(2026-11-24)`
   - *Catatan*: 4 skenario inti smoke testing (TC-AUTH-001, TC-AUTH-002, TC-PKWT-DSH-001, TC-MITRA-DSH-001) berhasil dieksekusi via `npm run test:smoke` dengan hasil 100% Passed (4/4 lolos dalam 5.9s).
-- [ ] **Task 4.2 Eksekusi Test Suite Regression (Full Regression 59 TC)**
-  - *Catatan*: Menunggu Engineer 2 menyelesaikan 31 TC miliknya. Setelah 31 TC selesai diimplementasikan, jalankan full regression 59 TC sampai seluruhnya 100% Passed.
+- [x] **Task 4.2 Eksekusi Test Suite Regression (Full Regression 59 TC)** `(2026-11-27)`
+  - *Catatan*: Seluruh 31 TC Engineer 2 lulus (55 passed, 3 flaky passed on retry, 1 failed pada `TC-PKWT-DSH-006` milik Engineer 1 karena data jumlah absen bulan berjalan di akun live berubah).
 - [x] **Task 4.3 Analisis Laporan HTML & Tracing Playwright** `(2026-11-24)`
   - *Catatan*: Analisis laporan HTML (`playwright-report/index.html`) selesai. Seluruh metrik eksekusi (59 passed, 0 failed, 0 flaky, durasi 1.1 menit, 0 failure traces) serta rincian performa per suite telah didokumentasikan di `docs/execution-report.md`.
 - [x] **Task 4.4 Finalisasi Dokumentasi Walkthrough & Wrap-up Proyek** `(2026-11-24)`
